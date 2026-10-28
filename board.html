@@ -1,0 +1,125 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kaggle Board</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Antic+Slab&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f5f7;--fg:#555;--head:#2b2b2b;--mut:#8b9099;--line:#e3e6ea;--card:#fff;--ok:#1f7a3a;--warn:#b0471b;--gold:#c9a227;--silver:#8e9aa6;--bronze:#b0703a;--me:#eef3fa;--acc:#3d516e;--hero:#1a222c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12171e;--fg:#c9ced6;--head:#eef1f5;--mut:#7f8896;--line:#2a3441;--card:#1a222c;--ok:#5fc27e;--warn:#f08a5d;--me:#24303f;--acc:#8fb0d8;--hero:#0e1319}}
+:root[data-theme="dark"]{--bg:#12171e;--fg:#c9ced6;--head:#eef1f5;--mut:#7f8896;--line:#2a3441;--card:#1a222c;--ok:#5fc27e;--warn:#f08a5d;--me:#24303f;--acc:#8fb0d8;--hero:#0e1319}
+*{box-sizing:border-box} body{background:var(--bg);color:var(--fg);font:15px/1.5 'Antic Slab',Georgia,serif;margin:0;padding:0}
+a{color:var(--acc);text-decoration:none} a:hover{text-decoration:underline}
+header{background:var(--hero);color:#fff;font-family:Montserrat,sans-serif;text-align:center;padding:40px 16px 36px;display:block}
+header h1{font-weight:400;font-size:clamp(26px,5vw,40px);margin:0 0 6px} header h1 a{color:#fff;opacity:.85} header small{color:#aeb7c4;font-size:13px;display:block}
+body>section,.err{max-width:1200px;margin:18px auto;background:var(--card);border-radius:12px;box-shadow:0 8px 16px rgba(0,0,0,.12);padding:16px 20px}
+body>section:first-of-type{margin-top:-14px}
+h2{font-family:Montserrat,sans-serif;font-weight:600;color:var(--head);font-size:18px;margin:0 0 10px} h2 small{color:var(--mut);font-weight:400;font-size:12px;display:block}
+h3{font-family:Montserrat,sans-serif;font-size:12px;color:var(--mut);margin:14px 0 6px;text-transform:uppercase;letter-spacing:.05em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.kpis div{border:1px solid var(--line);border-radius:10px;padding:8px 10px} .kpis span{display:block;color:var(--mut);font-size:12px;font-family:Montserrat,sans-serif}
+.kpis b{font-size:20px;font-variant-numeric:tabular-nums;color:var(--head)} .kpis i{display:block;color:var(--mut);font-style:normal;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums} td,th{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:500;font-size:12px;font-family:Montserrat,sans-serif} .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:800px){.cols{grid-template-columns:1fr}} .cols>div{overflow-x:auto}
+.cut td{border:0;text-align:center;font-size:12px} .cut td.gold{color:var(--gold)} .cut td.silver{color:var(--silver)} .cut td.bronze{color:var(--bronze)}
+.ok{color:var(--ok)} .warn{color:var(--warn)} tr.me{background:var(--me)} .by{color:var(--mut);font-size:12px}
+.badge{border-radius:4px;padding:1px 6px;font-size:11px;color:#fff;background:var(--mut);font-family:Montserrat,sans-serif} .badge.gold{background:var(--gold)} .badge.silver{background:var(--silver)} .badge.bronze{background:var(--bronze)}
+.err{color:#c0392b}
+</style></head><body>
+<header><div><h1>Kaggle board <a href="index.html" style="font-size:13px;font-weight:400">· open competitions on every platform →</a></h1><small>scraped 2026-10-28 19:06 UTC in 59 s · counted votes are read by hand from each notebook page (Kaggle's API has no counted votes)</small></div>
+</header>
+
+<section>
+ <h2><a href="https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation">Quantum</a>
+  <small>Featured · comp medals · higher is better · 1448 teams · ends 2027-01-20 (83 d)</small></h2>
+ <div class="kpis">
+  <div><span>our rank</span><b>157</b><i>of 1448</i></div>
+  <div><span>our board</span><b>22.67253</b></div>
+  <div><span>#1</span><b>26.14113</b><i>Breaking1800</i></div>
+  <div><span>best public notebook</span><b>22.70030</b></div>
+ </div>
+ <p><span class="warn">best public 22.70030 beats our board 22.67253</span> · rank 157/1448, top 26.14113</p>
+ <table class="cut"><tr><td class="gold">gold ≤12<br><b>23.71909</b></td><td class="silver">silver ≤72<br><b>22.70132</b></td><td class="bronze">bronze ≤144<br><b>22.67259</b></td></tr></table>
+ <div class="cols">
+  <div><h3>Our public notebooks</h3>
+   <table><tr><th>raw votes</th><th>counted</th><th>medal</th><th>next</th><th>score</th><th>notebook</th></tr><tr><td>49</td><td>22<br><span class="by">read 2026-10-28 (Alex)</span></td><td><span class="badge silver">silver</span></td><td>28 counted to gold</td><td>22.66582</td><td><a href="https://www.kaggle.com/code/alexchilton/22-57-lb-verified-three-task-portfolio">22.57 LB: Verified Three-Task Portfolio</a></td></tr><tr><td>3</td><td>–</td><td></td><td>at most 2 raw to bronze</td><td>6.21571</td><td><a href="https://www.kaggle.com/code/alexchilton/qcc-dqi-port-private">QCC dqi port private</a></td></tr></table></div>
+  <div><h3>Best public notebooks</h3>
+   <table><tr><th>score</th><th>votes</th><th>notebook</th></tr><tr class=""><td>22.70030</td><td>22</td><td><a href="https://www.kaggle.com/code/manwithacat/the-real-150k-was-the-friends-we-made">The Real $150K Was the Friends We Made</a><span class="by"> manwithacat</span></td></tr><tr class=""><td>22.70030</td><td>59</td><td><a href="https://www.kaggle.com/code/heliosli/the-dataset-is-now-public-now-enjoy">The dataset is now public now. Enjoy!⭐⭐⭐</a><span class="by"> heliosli</span></td></tr><tr class=""><td>22.70030</td><td>1</td><td><a href="https://www.kaggle.com/code/geokocha/baseline-walkthrough">baseline walkthrough</a><span class="by"> geokocha</span></td></tr><tr class=""><td>22.70030</td><td>0</td><td><a href="https://www.kaggle.com/code/gedouluhui/qcc-heliosli-v12-22-7003-local-gm-verified-fork">QCC heliosli v12 22.7003 local GM (verified fork)</a><span class="by"> gedouluhui</span></td></tr><tr class=""><td>22.67327</td><td>1</td><td><a href="https://www.kaggle.com/code/avazaku/iso-gap-offset-descent-xor2-qrom">Iso-Gap Offset Descent + XOR2 QROM</a><span class="by"> avazaku</span></td></tr><tr class=""><td>22.67265</td><td>10</td><td><a href="https://www.kaggle.com/code/atakanaldemir/quantum-circuits-xor2-refit-and-gauge">Quantum Circuits: XOR2 Refit and Gauge</a><span class="by"> atakanaldemir</span></td></tr><tr class=""><td>22.67253</td><td>81</td><td><a href="https://www.kaggle.com/code/somejoint/quantum-circuits-22-67-local-gm-full-xor-chem">Quantum Circuits | 22.67 Local GM: Full-XOR Chem</a><span class="by"> somejoint</span></td></tr><tr class="me"><td>22.66582</td><td>49</td><td><a href="https://www.kaggle.com/code/alexchilton/22-57-lb-verified-three-task-portfolio">22.57 LB: Verified Three-Task Portfolio</a><span class="by"> alexchilton</span></td></tr></table></div>
+ </div>
+ 
+</section>
+<section>
+ <h2><a href="https://www.kaggle.com/competitions/name-that-llm">Name that LLM</a>
+  <small>Featured · comp medals · higher is better · 3701 teams · ends 2027-01-14 (77 d)</small></h2>
+ <div class="kpis">
+  <div><span>our rank</span><b>121</b><i>of 3701</i></div>
+  <div><span>our board</span><b>0.65400</b></div>
+  <div><span>#1</span><b>0.72800</b><i>Hod Carriers</i></div>
+  <div><span>best public notebook</span><b>0.66000</b></div>
+ </div>
+ <p><span class="warn">best public 0.66000 beats our board 0.65400</span> · rank 121/3701, top 0.72800</p>
+ <table class="cut"><tr><td class="gold">gold ≤17<br><b>0.67300</b></td><td class="silver">silver ≤185<br><b>0.65200</b></td><td class="bronze">bronze ≤370<br><b>0.65100</b></td></tr></table>
+ <div class="cols">
+  <div><h3>Our public notebooks</h3>
+   <table><tr><th>raw votes</th><th>counted</th><th>medal</th><th>next</th><th>score</th><th>notebook</th></tr><tr><td>60</td><td>19<br><span class="by">read 2026-10-28 evening (Alex): 19 medal votes; slug changed 2026-10-28 (retitle to 0.654)</span></td><td><span class="badge bronze">bronze</span></td><td>1 counted to silver</td><td>0.65400</td><td><a href="https://www.kaggle.com/code/alexchilton/name-that-llm-0-654-full-ensemble-what-failed">Name That LLM 0.654: Full Ensemble + What Failed</a></td></tr><tr><td>4</td><td>–</td><td></td><td>at most 1 raw to bronze</td><td>0.65100</td><td><a href="https://www.kaggle.com/code/alexchilton/name-that-llm-0-651-lora24-atlas-ensemble">Name That LLM 0.651: LoRA24 + ATLAS Ensemble</a></td></tr></table></div>
+  <div><h3>Best public notebooks</h3>
+   <table><tr><th>score</th><th>votes</th><th>notebook</th></tr><tr class=""><td>0.66000</td><td>23</td><td><a href="https://www.kaggle.com/code/mercurydust/name-that-llm-submission">Name That LLM-Submission</a><span class="by"> mercurydust</span></td></tr><tr class="me"><td>0.65400</td><td>60</td><td><a href="https://www.kaggle.com/code/alexchilton/name-that-llm-0-654-full-ensemble-what-failed">Name That LLM 0.654: Full Ensemble + What Failed</a><span class="by"> alexchilton</span></td></tr><tr class=""><td>0.65400</td><td>110</td><td><a href="https://www.kaggle.com/code/romantamrazov/name-that-llm-who-am-i">Name That LLM | Who am I?</a><span class="by"> romantamrazov</span></td></tr><tr class=""><td>0.65300</td><td>6</td><td><a href="https://www.kaggle.com/code/peterdreamhan/name-that-llm-soft-sinkhorn-0-5-t4">Name That LLM Soft Sinkhorn 0.5 T4</a><span class="by"> peterdreamhan</span></td></tr><tr class=""><td>0.65200</td><td>25</td><td><a href="https://www.kaggle.com/code/lightningv08/0-652-qwen3-8-27b-lora-spectral-ensemble">0.652 | Qwen3.8-27B LoRA + Spectral Ensemble</a><span class="by"> lightningv08</span></td></tr><tr class=""><td>0.65100</td><td>72</td><td><a href="https://www.kaggle.com/code/maverickss26/kaggle-name-the-llm-v3">Kaggle_name_the_LLM_v3</a><span class="by"> maverickss26</span></td></tr><tr class=""><td>0.65100</td><td>16</td><td><a href="https://www.kaggle.com/code/mohammedafreedpasha/name-that-llm-solution">Name That LLM Solution</a><span class="by"> mohammedafreedpasha</span></td></tr><tr class="me"><td>0.65100</td><td>4</td><td><a href="https://www.kaggle.com/code/alexchilton/name-that-llm-0-651-lora24-atlas-ensemble">Name That LLM 0.651: LoRA24 + ATLAS Ensemble</a><span class="by"> alexchilton</span></td></tr></table></div>
+ </div>
+ 
+</section>
+<section>
+ <h2><a href="https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra">CASMI26</a>
+  <small>Featured · comp medals · higher is better · 4268 teams · ends 2026-12-14 (46 d)</small></h2>
+ <div class="kpis">
+  <div><span>our rank</span><b>276</b><i>of 4268</i></div>
+  <div><span>our board</span><b>0.47200</b></div>
+  <div><span>#1</span><b>0.51600</b><i>Oleksandr Parfionov</i></div>
+  <div><span>best public notebook</span><b>0.47800</b></div>
+ </div>
+ <p><span class="warn">best public 0.47800 beats our board 0.47200</span> · rank 276/4268, top 0.51600</p>
+ <table class="cut"><tr><td class="gold">gold ≤18<br><b>0.48000</b></td><td class="silver">silver ≤213<br><b>0.47200</b></td><td class="bronze">bronze ≤426<br><b>0.47000</b></td></tr></table>
+ <div class="cols">
+  <div><h3>Our public notebooks</h3>
+   <table><tr><th>raw votes</th><th>counted</th><th>medal</th><th>next</th><th>score</th><th>notebook</th></tr><tr><td>60</td><td>14<br><span class="by">read 2026-10-28 (Alex)</span></td><td><span class="badge bronze">bronze</span></td><td>6 counted to silver</td><td>0.47200</td><td><a href="https://www.kaggle.com/code/alexchilton/casmi26-lb-0-472-leader-safe-ranks-2-25-at-0-75">CASMI26 LB 0.472 | Leader-Safe, Ranks 2-25 at 0.75</a></td></tr><tr><td>2</td><td>–</td><td></td><td>at most 3 raw to bronze</td><td>0.44800</td><td><a href="https://www.kaggle.com/code/alexchilton/casmi26-v461-depth7">casmi26-v461-depth7</a></td></tr><tr><td>2</td><td>–</td><td></td><td>at most 3 raw to bronze</td><td>0.45400</td><td><a href="https://www.kaggle.com/code/alexchilton/casmi26-public-guhongbin-v461">casmi26-public-guhongbin-v461</a></td></tr><tr><td>1</td><td>–</td><td></td><td>at most 4 raw to bronze</td><td>0.00000</td><td><a href="https://www.kaggle.com/code/alexchilton/casmi26-tutorial-and-glossary-from-a-0-342-scorer">CASMI26 Tutorial and Glossary from a 0 342 Scorer</a></td></tr><tr><td>0</td><td>–</td><td></td><td>at most 5 raw to bronze</td><td>0.00000</td><td><a href="https://www.kaggle.com/code/alexchilton/casmi26-public-lineage-0-34-to-0-44">CASMI26 public lineage: 0.34 to 0.44</a></td></tr><tr><td>0</td><td>–</td><td></td><td>at most 5 raw to bronze</td><td>0.00000</td><td><a href="https://www.kaggle.com/code/alexchilton/casmi26-the-metric-and-three-leaks">CASMI26 the metric and three leaks</a></td></tr></table></div>
+  <div><h3>Best public notebooks</h3>
+   <table><tr><th>score</th><th>votes</th><th>notebook</th></tr><tr class=""><td>0.47800</td><td>50</td><td><a href="https://www.kaggle.com/code/heliosli/happy-to-make-the-dataset-public-if-it-helps">Happy to make the dataset public if it helps!⭐⭐⭐</a><span class="by"> heliosli</span></td></tr><tr class=""><td>0.47700</td><td>11</td><td><a href="https://www.kaggle.com/code/kunaldesale2408/enveda-casmi-2026-mid">Enveda CASMI 2026 - MID</a><span class="by"> kunaldesale2408</span></td></tr><tr class=""><td>0.47700</td><td>96</td><td><a href="https://www.kaggle.com/code/romantamrazov/casmi-2026-spectral-parallax">CASMI 2026 | Spectral Parallax</a><span class="by"> romantamrazov</span></td></tr><tr class=""><td>0.47700</td><td>1</td><td><a href="https://www.kaggle.com/code/youyouwou/casmi26-v120rel150">casmi26-v120rel150</a><span class="by"> youyouwou</span></td></tr><tr class=""><td>0.47700</td><td>63</td><td><a href="https://www.kaggle.com/code/busyaprime/lb-0-477-two-0-472-fixes-merged-the-right-way">LB 0.477 · Two 0.472 Fixes, Merged the Right Way</a><span class="by"> busyaprime</span></td></tr><tr class=""><td>0.47700</td><td>0</td><td><a href="https://www.kaggle.com/code/rajrajak99/casmi26-apex-v1300-sota-pxm-0477">CASMI26 Apex v1300 SOTA PXM 0477</a><span class="by"> rajrajak99</span></td></tr><tr class=""><td>0.47700</td><td>0</td><td><a href="https://www.kaggle.com/code/rajrajak99/casmi26-apex-v1320-pure-shield-pxm">CASMI26 Apex v1320 Pure Shield PXM</a><span class="by"> rajrajak99</span></td></tr><tr class=""><td>0.47700</td><td>2</td><td><a href="https://www.kaggle.com/code/pjmathematician/casmi26-e303-pub477-gpu">casmi26-e303-pub477-gpu</a><span class="by"> pjmathematician</span></td></tr></table></div>
+ </div>
+ 
+</section>
+<section>
+ <h2><a href="https://www.kaggle.com/competitions/squares-in-squares">Squares</a>
+  <small>Playground · no comp medals · lower is better · 1139 teams · ends 2027-07-18 (262 d)</small></h2>
+ <div class="kpis">
+  <div><span>our rank</span><b>124</b><i>of 1139</i></div>
+  <div><span>our board</span><b>22.26238</b></div>
+  <div><span>#1</span><b>22.07636</b><i>Cats and boxes 😼</i></div>
+  <div><span>best public notebook</span><b>22.26238</b></div>
+ </div>
+ <p><span class="ok">level with best public 22.26238</span> · rank 124/1139, top 22.07636</p>
+ <table class="cut"><tr><td class="gold">gold ≤12<br><b>22.22062</b></td><td class="silver">silver ≤56<br><b>22.26028</b></td><td class="bronze">bronze ≤113<br><b>22.26235</b></td></tr></table>
+ <div class="cols">
+  <div><h3>Our public notebooks</h3>
+   <table><tr><th>raw votes</th><th>counted</th><th>medal</th><th>next</th><th>score</th><th>notebook</th></tr><tr><td>38</td><td>16<br><span class="by">read 2026-10-28 (Alex)</span></td><td><span class="badge bronze">bronze</span></td><td>4 counted to silver</td><td>22.26238</td><td><a href="https://www.kaggle.com/code/alexchilton/squares-101-the-starter-kit-3-700-downloads">Squares 101: the Starter Kit (3,700+ downloads)</a></td></tr><tr><td>16</td><td>10<br><span class="by">read 2026-10-28 (Alex)</span></td><td><span class="badge bronze">bronze</span></td><td>10 counted to silver</td><td>22.26238</td><td><a href="https://www.kaggle.com/code/alexchilton/fault-line-dp-basin-hopping-lb-22-2672">Fault-line DP + Basin Hopping - LB 22.2672</a></td></tr><tr><td>4</td><td>–</td><td></td><td>at most 1 raw to bronze</td><td>22.47968</td><td><a href="https://www.kaggle.com/code/alexchilton/certified-witnesses-basin-hopping-lb-22-3084">Certified Witnesses + Basin Hopping - LB 22.3084</a></td></tr><tr><td>2</td><td>–</td><td></td><td>at most 3 raw to bronze</td><td>22.59720</td><td><a href="https://www.kaggle.com/code/alexchilton/certified-merge-of-public-packings-lb-22-5978">Certified Merge of Public Packings - LB 22.5978</a></td></tr></table></div>
+  <div><h3>Best public notebooks</h3>
+   <table><tr><th>score</th><th>votes</th><th>notebook</th></tr><tr class="me"><td>22.26238</td><td>38</td><td><a href="https://www.kaggle.com/code/alexchilton/squares-101-the-starter-kit-3-700-downloads">Squares 101: the Starter Kit (3,700+ downloads)</a><span class="by"> alexchilton</span></td></tr><tr class="me"><td>22.26238</td><td>16</td><td><a href="https://www.kaggle.com/code/alexchilton/fault-line-dp-basin-hopping-lb-22-2672">Fault-line DP + Basin Hopping - LB 22.2672</a><span class="by"> alexchilton</span></td></tr><tr class=""><td>22.26238</td><td>12</td><td><a href="https://www.kaggle.com/code/avazaku/c-seam-dp-certified-merge">C++ Seam DP + Certified Merge</a><span class="by"> avazaku</span></td></tr><tr class=""><td>22.26238</td><td>8</td><td><a href="https://www.kaggle.com/code/lucifer19/think-select-reclose-v23-the-fine-edge">🐈‍⬛ Think. Select. Reclose — V23 | The Fine Edge</a><span class="by"> lucifer19</span></td></tr><tr class=""><td>22.26238</td><td>29</td><td><a href="https://www.kaggle.com/code/nilanjansaha123/s-in-s-certified-portfolio-merge-proj-quench">S in S | Certified Portfolio Merge + Proj Quench</a><span class="by"> nilanjansaha123</span></td></tr><tr class=""><td>22.26238</td><td>11</td><td><a href="https://www.kaggle.com/code/nilanjansaha123/certified-merge-projection-quench-gpu-screen">Certified Merge + Projection Quench + GPU Screen</a><span class="by"> nilanjansaha123</span></td></tr><tr class=""><td>22.26240</td><td>28</td><td><a href="https://www.kaggle.com/code/evgendvorkin/squares-in-squares-deep-eda-analogies">🧩 Squares in Squares | Deep EDA &amp; Analogies</a><span class="by"> evgendvorkin</span></td></tr><tr class=""><td>22.26240</td><td>17</td><td><a href="https://www.kaggle.com/code/busyaprime/lb-22-2622907-best-public-packings-fq-quench">LB 22.2622907 · Best Public Packings + FQ Quench</a><span class="by"> busyaprime</span></td></tr></table></div>
+ </div>
+ 
+</section>
+<section>
+ <h2><a href="https://www.kaggle.com/competitions/neurips-2026-smart-buildings">Smart buildings</a>
+  <small>Community · no comp medals · lower is better · 419 teams · ends 2027-01-15 (78 d)</small></h2>
+ <div class="kpis">
+  <div><span>our rank</span><b>164</b><i>of 419</i></div>
+  <div><span>our board</span><b>0.01237</b></div>
+  <div><span>#1</span><b>0.00514</b><i>Pardheev Krishna</i></div>
+  <div><span>best public notebook</span><b>0.01420</b></div>
+ </div>
+ <p><span class="ok">ahead of best public notebook 0.01420</span> · rank 164/419, top 0.00514</p>
+ <table class="cut"><tr><td class="gold">gold ≤10<br><b>0.00603</b></td><td class="silver">silver ≤50<br><b>0.00962</b></td><td class="bronze">bronze ≤100<br><b>0.01062</b></td></tr></table>
+ <div class="cols">
+  <div><h3>Our public notebooks</h3>
+   <table><tr><th>raw votes</th><th>counted</th><th>medal</th><th>next</th><th>score</th><th>notebook</th></tr><tr><td>0</td><td>–</td><td></td><td>at most 5 raw to bronze</td><td>0.00000</td><td><a href="https://www.kaggle.com/code/alexchilton/yes-rl-can-run-a-building-residual-ppo">Yes, RL Can Run a Building: Residual PPO</a></td></tr></table></div>
+  <div><h3>Best public notebooks</h3>
+   <table><tr><th>score</th><th>votes</th><th>notebook</th></tr><tr class=""><td>0.01420</td><td>29</td><td><a href="https://www.kaggle.com/code/malyshevdanil/smart-buildings-probe-zt-best">Smart Buildings Probe ZT Best</a><span class="by"> malyshevdanil</span></td></tr><tr class=""><td>0.01489</td><td>7</td><td><a href="https://www.kaggle.com/code/jazivxt/smart-buildings-facilities-v17">Smart Buildings Facilities V17</a><span class="by"> jazivxt</span></td></tr><tr class=""><td>0.01499</td><td>4</td><td><a href="https://www.kaggle.com/code/beraterolelk/smart-buildings-adaptive-zt-controller">Smart Buildings Adaptive ZT Controller</a><span class="by"> beraterolelk</span></td></tr><tr class=""><td>0.01546</td><td>6</td><td><a href="https://www.kaggle.com/code/jazivxt/smart-buildings-facilities-v5">Smart Buildings Facilities V5</a><span class="by"> jazivxt</span></td></tr><tr class=""><td>0.01582</td><td>22</td><td><a href="https://www.kaggle.com/code/malyshevdanil/smart-buildings-probe-ds-k07">Smart Buildings Probe DS K07</a><span class="by"> malyshevdanil</span></td></tr><tr class=""><td>0.01619</td><td>9</td><td><a href="https://www.kaggle.com/code/jazivxt/smart-buildings-facilities-v2">Smart Buildings Facilities V2</a><span class="by"> jazivxt</span></td></tr><tr class=""><td>0.01853</td><td>12</td><td><a href="https://www.kaggle.com/code/malyshevdanil/smart-buildings-probe-zone-pi-k10">Smart Buildings Probe Zone PI K10</a><span class="by"> malyshevdanil</span></td></tr><tr class=""><td>0.01853</td><td>5</td><td><a href="https://www.kaggle.com/code/chaitanyajamble/smart-buildings-competition">Smart Buildings Competition</a><span class="by"> chaitanyajamble</span></td></tr></table></div>
+ </div>
+ 
+</section>
+</body></html>
